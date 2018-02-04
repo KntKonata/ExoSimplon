@@ -1,0 +1,162 @@
+<style>
+.box {
+	background: #ffffff;
+	width: 200px;
+	height: 200px;
+	border: 2px solid black;
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	margin: 5px;
+}
+
+.rel {
+	background: #add8e6;
+	box-shadow: 0 0 0 1px #0000ff inset;
+	width: 40px;
+	height: 40px;
+	position: relative;
+}
+
+.abs {
+	background: #90ee90;
+	box-shadow: 0 0 0 1px #008000 inset;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+}
+
+.w0 {left: 0;}
+.w20 {left: 20;}
+.w40 {left: 40;}
+.w80 {left: 80;}
+.w120 {left: 120;}
+.w140 {left: 140;}
+.w160 {left: 160;}
+
+.h20m{top:-20;}
+.h40m{top:-40;}
+.h60m{top:-60;}
+.h80m{top:-80;}
+.h100m{top:-100;}
+.h160m{top:-160;}
+.h180m{top:-180;}
+.h200m{top:-200;}
+
+.h20{top:20;}
+.h40{top:40;}
+.h60{top:60;}
+.h80{top:80;}
+.h100{top:100;}
+.h120{top:120;}
+.h140{top:140;}
+.h160{top:160;}
+</style>
+
+<html>
+	<div class="box">
+		<div class="rel w0">rlsp1</div>
+		<div class="rel w20">rlsp2</div>
+		<div class="rel w40">rlsp3</div>
+		<div class="rel w20">rlsp4</div>
+		<div class="rel w0">rlsp5</div>
+	</div>
+
+	<div class="box">
+		<div class="rel w0">rlsp1</div>
+		<div class="rel w40 h20m">rlsp2</div>
+		<div class="rel w80 h40m">rlsp3</div>
+		<div class="rel w120 h100m">rlsp4</div>
+		<div class="rel w160 h160m">rlsp5</div>
+	</div>
+
+	<div class="box">
+		<div class="rel w160">rlsp1</div>
+		<div class="rel w140">rlsp2</div>
+		<div class="rel w120">rlsp3</div>
+		<div class="rel w140">rlsp4</div>
+		<div class="rel w160">rlsp5</div>
+	</div>
+
+	<div class="box">
+		<div class="rel w0 h160">rlsp1</div>
+		<div class="rel w40 h100">rlsp2</div>
+		<div class="rel w80 h40">rlsp3</div>
+		<div class="rel w120 h20">rlsp4</div>
+		<div class="rel w160 h0">rlsp5</div>
+	</div>
+
+	<div class="box">
+		<div class="abs w0 h0">absp1</div>
+		<div class="abs w40 h0">absp2</div>
+		<div class="abs w80 h0">absp3</div>
+		<div class="abs w120 h0">absp4</div>
+		<div class="abs w160 h0">absp5</div>
+	</div>
+	<div class="box">
+		<div class="abs w0 h160">absp1</div>
+		<div class="abs w40 h160">absp2</div>
+		<div class="abs w80 h160">absp3</div>
+		<div class="abs w120 h160">absp4</div>
+		<div class="abs w160 h160">absp5</div>
+	</div>
+	<div class="box">
+		<div class="abs w80 h0">absp1</div>
+		<div class="abs w160 h80">absp2</div>
+		<div class="abs w80 h160">absp3</div>
+		<div class="abs w0 h80">absp4</div>
+		<div class="abs w80 h80">absp5</div>
+	</div>
+	<div class="box">
+		<div class="abs w0 h0">absp1</div>
+		<div class="abs w160 h0">absp2</div>
+		<div class="abs w160 h160">absp3</div>
+		<div class="abs w0 h160">absp4</div>
+		<div class="abs w80 h80">absp5</div>
+	</div>
+
+	<div class="box">
+		<div class="rel w0 h120">rlsp1</div>
+		<div class="rel w40 h100">rlsp2</div>
+		<div class="rel w80 h80">rlsp3</div>
+		<div class="rel w120 h20">rlsp4</div>
+		<div class="rel w160 h40m">rlsp5</div>
+
+		<div class="rel w40 h160m">rlsp6</div>
+		<div class="rel w120 h200m">rlsp7</div>
+	</div>
+
+	<div class="box">
+		<div class="abs w0 h120">absp1</div>
+		<div class="abs w40 h140">absp2</div>
+		<div class="abs w80 h160">absp3</div>
+		<div class="abs w120 h140">absp4</div>
+		<div class="abs w160 h120">absp5</div>
+
+		<div class="abs w40 h40">absp6</div>
+		<div class="abs w120 h40">absp7</div>
+	</div>
+
+	<div class="box">
+		<div class="rel w0 h120">rlsp1</div>
+		<div class="rel w40 h100">rlsp2</div>
+		<div class="rel w80 h80">rlsp3</div>
+		<div class="rel w120 h20">rlsp4</div>
+		<div class="rel w160 h40m">rlsp5</div>
+
+		<div class="abs w40 h40">absp6</div>
+		<div class="abs w120 h40">absp7</div>
+	</div>
+
+	<div class="box">
+		<div class="abs w0 h120">absp1</div>
+		<div class="abs w40 h140">absp2</div>
+		<div class="abs w80 h160">absp3</div>
+		<div class="abs w120 h140">absp4</div>
+		<div class="abs w160 h120">absp5</div>
+
+		<div class="rel w40 h40">rlsp6</div>
+		<div class="rel w120 h200">rlsp7</div>
+	</div>
+
+</html>

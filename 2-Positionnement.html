@@ -1,0 +1,212 @@
+<style>
+	body {
+		background: #506083;
+	}
+
+	.inlineblock {
+		background: #ffffff;
+		width: 200px;
+		height: 200px;
+		display: inline-block;
+		vertical-align: top;
+		margin: 5px;
+		padding: 1px;
+	}
+
+	.fleft {
+		float: left;
+		background: #90ee90;
+		box-shadow: 0 0 0 1px #008000 inset;
+		height: 20px;
+	}
+
+	.fright {
+		float: right;
+		background: #add8e6;
+		box-shadow: 0 0 0 1px #0000ff inset;
+		height: 20px;
+	}
+
+	.fclear {
+		background: #990099;
+		font-size: 10px;
+		width: 100%;
+		text-align: center;
+		height: 10px;
+		clear: both;
+	}
+
+	.f25 {width: 25%;}
+	.f33 {width: 33.33%;}
+	.f50 {width: 50%;}
+
+
+</style>
+
+<html>
+	<title>HTML - Positionnement</title>
+
+	<!-- Float Left 50/33/25% -->
+
+	<div class="inlineblock">
+		<div class="fleft f50">fl 50</div>
+		<div class="fleft f50">fl 50</div>
+		<div class="fleft f50">fl 50</div>
+		<div class="fleft f50">fl 50</div>
+		<div class="fleft f50">fl 50</div>
+		<div class="fleft f50">fl 50</div>
+		<div class="fleft f50">fl 50</div>
+	</div>
+	<div class="inlineblock">
+		<div class="fleft f33">fl 33</div>
+		<div class="fleft f33">fl 33</div>
+		<div class="fleft f33">fl 33</div>
+		<div class="fleft f33">fl 33</div>
+		<div class="fleft f33">fl 33</div>
+		<div class="fleft f33">fl 33</div>
+		<div class="fleft f33">fl 33</div>
+		<div class="fleft f33">fl 33</div>
+	</div>
+	<div class="inlineblock">
+		<div class="fleft f25">fl 25</div>
+		<div class="fleft f25">fl 25</div>
+		<div class="fleft f25">fl 25</div>
+		<div class="fleft f25">fl 25</div>
+		<div class="fleft f25">fl 25</div>
+		<div class="fleft f25">fl 25</div>
+	</div>
+	<div class="inlineblock">
+		<div class="fleft f33">fl 33</div>
+		<div class="fleft f33">fl 33</div>
+		<div class="fleft f33">fl 33</div>
+		<div class="fleft f50">fl 50</div>
+		<div class="fleft f50">fl 50</div>
+		<div class="fleft f25">fl 25</div>
+		<div class="fleft f25">fl 25</div>
+		<div class="fleft f25">fl 25</div>
+		<div class="fleft f25">fl 25</div>
+	</div>
+
+	<!-- Float Right 50/33/25% -->
+
+	<div class="inlineblock">
+		<div class="fright f50">fr 50</div>
+		<div class="fright f50">fr 50</div>
+		<div class="fright f50">fr 50</div>
+		<div class="fright f50">fr 50</div>
+		<div class="fright f50">fr 50</div>
+		<div class="fright f50">fr 50</div>
+		<div class="fright f50">fr 50</div>
+	</div>
+	<div class="inlineblock">
+		<div class="fright f33">fr 33</div>
+		<div class="fright f33">fr 33</div>
+		<div class="fright f33">fr 33</div>
+		<div class="fright f33">fr 33</div>
+		<div class="fright f33">fr 33</div>
+		<div class="fright f33">fr 33</div>
+		<div class="fright f33">fr 33</div>
+		<div class="fright f33">fr 33</div>
+	</div>
+	<div class="inlineblock">
+		<div class="fright f25">fr 25</div>
+		<div class="fright f25">fr 25</div>
+		<div class="fright f25">fr 25</div>
+		<div class="fright f25">fr 25</div>
+		<div class="fright f25">fr 25</div>
+		<div class="fright f25">fr 25</div>
+	</div>
+	<div class="inlineblock">
+		<div class="fright f33">fr 33</div>
+		<div class="fright f33">fr 33</div>
+		<div class="fright f33">fr 33</div>
+		<div class="fright f50">fr 50</div>
+		<div class="fright f50">fr 50</div>
+		<div class="fright f25">fr 25</div>
+		<div class="fright f25">fr 25</div>
+		<div class="fright f25">fr 25</div>
+		<div class="fright f25">fr 25</div>
+	</div>
+
+	<!-- Some fun -->
+
+	<div class="inlineblock">
+		<div class="fleft f33">fl 33</div>
+		<div class="fleft f33">fl 33</div>
+		<div class="fright f33">fr 33</div>
+		<div class="fleft f33">fl 33</div>
+		<div class="fleft f33">fl 33</div>
+		<div class="fright f33">fr 33</div>
+	</div>
+	<div class="inlineblock">
+		<div class="fleft f25">fl 25</div>
+		<div class="fright f25">fr 25</div>
+		<div class="fright f50">fr 50</div>
+		<div class="fleft f33">fl 33</div>
+		<div class="fright f33">fr 33</div>
+		<div class="fright f33">fr 33</div>
+		<div class="fleft f33">fl 33</div>
+		<div class="fleft f33">fl 33</div>
+		<div class="fright f33">fr 33</div>
+	</div>
+	<div class="inlineblock">
+		<div class="fleft f33">fl 33</div>
+		<div class="fright f50">fr 50</div>
+		<div class="fleft f50">fl 50</div>
+		<div class="fleft f33">fl 33</div>
+		<div class="fleft f33">fl 33</div>
+		<div class="fright f33">fr 33</div>
+	</div>
+	<div class="inlineblock">
+		<div class="fright f33">fl 33</div>
+		<div class="fleft f50">fr 50</div>
+		<div class="fright f50">fl 50</div>
+		<div class="fright f33">fl 33</div>
+		<div class="fright f33">fl 33</div>
+		<div class="fleft f33">fr 33</div>
+	</div>
+
+	<!-- Some fun -->
+
+	<div class="inlineblock">
+		<div class="fleft f33">fl 33</div>
+		<div class="fleft f33">fl 33</div>
+		<div class="fleft f33">fl 33</div>
+		<div class="fleft f33">fl 33</div>
+		<div class="fclear">clearfix</div>
+		<div class="fleft f33">fl 33</div>
+		<div class="fleft f33">fl 33</div>
+	</div>
+	<div class="inlineblock">
+		<div class="fright f25">fr 25</div>
+		<div class="fclear">clearfix</div>
+		<div class="fleft f25">fl 25</div>
+		<div class="fclear">clearfix</div>
+		<div class="fright f25">fr 25</div>
+		<div class="fclear">clearfix</div>
+		<div class="fleft f25">fl 25</div>
+	</div>
+	<div class="inlineblock">
+		<div class="fleft f33">fl 33</div>
+		<div class="fright f33">fr 33</div>
+		<div class="fclear">clearfix</div>
+		<div class="fleft f25">fl 25</div>
+		<div class="fleft f25">fl 25</div>
+		<div class="fright f25">fr 25</div>
+		<div class="fclear">clearfix</div>
+		<div class="fleft f33">fl 33</div>
+	</div>
+	<div class="inlineblock">
+		<div class="fleft f33">fl 33</div>
+		<div class="fleft f33">fl 33</div>
+		<div class="fleft f33">fl 33</div>
+		<div class="fclear">clearfix</div>
+		<div class="fleft f33">fl 33</div>
+		<div class="fleft f33">fl 33</div>
+		<div class="fclear">clearfix</div>
+		<div class="fleft f25">fl 25</div>
+		<div class="fleft f25">fl 25</div>
+		<div class="fright f25">fr 25</div>
+		<div class="fclear">clearfix</div>
+	</div>
+</html>

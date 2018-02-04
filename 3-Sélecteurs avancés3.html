@@ -1,0 +1,65 @@
+<style>
+/** 
+  pseudoclass :
+  :focus => quand l'élément reçoit le focus
+  :hover => quand l'élément est suvolé par le curseur de la souris
+  :active => quand l'élément reçoit le click
+  :visited => quand le lien a déjà été visité
+  :first-child => premier enfant de son parent
+  :last-child => dernier enfant de son parent
+  :nth-child(n) => le n-ième enfant de son parent
+**/
+
+a:hover {
+	color: #B232FB;
+	text-decoration: none;
+}
+
+input[required="true"] {
+	border: 2px solid red;
+}
+
+input.test:active {
+	border: 2px solid green;
+	background: green;
+}
+
+input[type="submit"]:hover {
+	background: yellow;
+}
+
+input[type="submit"]:active {
+	background: blue;
+}
+
+tr:hover {
+	background: #E9FDEC !important;
+}
+
+table tr:nth-child(even) {
+	background: lightblue;
+}
+
+</style>
+
+<html>
+<a href="#">Link</a>
+<form>
+	<input type="text" value="simplon" /><br/>
+	<input type="text" value="simplon" required="true" /><br/>
+</form>
+
+<table border="1">
+	<tr><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+	<tr><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+	<tr><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+	<tr><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+	<tr><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+</table>
+<br/>
+<form>
+	<input class="test" type="text" value="login" /><br/>
+	<input class="test" type="password" value="passw" /><br/>
+	<input type="submit" value="Submit"/>
+</form>
+</html>

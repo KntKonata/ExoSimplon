@@ -1,0 +1,139 @@
+<style>
+tr:nth-child(even) {
+  background: #DDD;
+}
+
+tr:hover td:nth-child(1) {
+  background: #DBB !important;
+}
+
+p::first-line {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+p span {
+  display: block;
+}
+
+span::first-letter {
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#board {
+  width: calc(27px * 5);
+  border: 1px solid black;
+}
+
+#board div {
+  border: 1px solid black;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+}
+
+#board div:nth-child(4n+1){
+  background: #1DE58B;
+}
+
+#board div:nth-child(4n+2){
+  background: #0566F1;
+}
+
+#board div:nth-child(4n+3){
+  background: #F29E09;
+}
+
+#board div:nth-child(4n+4){
+  background: #9DE042;
+}
+
+a::after {
+  content: '➚';
+}
+
+a[href^="http://monsite.com"]::after {
+  content: '';
+}
+
+#test{
+  background: red;
+  width: 100px;
+  height: 100px;
+  transform: rotate(45deg);
+  position: relative;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+#test::before {
+  background: red;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  position: absolute;
+  margin-left: -50px;
+  content: ' ';
+}
+
+
+#test::after {
+  background: red;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  position: absolute;
+  margin-top: -50px;
+  content: ' ';
+}
+
+
+</style>
+
+<html>
+<table>
+  <tbody>
+     <tr>
+       <td>1</td><td>John</td><td>Doe</td><td>4</td>
+    </tr>
+     <tr>
+       <td>2</td><td>John</td><td>Doe</td><td>4</td>
+    </tr>
+     <tr>
+       <td>3</td><td>John</td><td>Doe</td><td>4</td>
+    </tr>
+     <tr>
+       <td>4</td><td>John</td><td>Doe</td><td>4</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>
+  Le Corbeau et le Renard
+  <span>Maître Corbeau sur un arbre perché,</span>
+  <span>Tenait en son bec un fromage.</span>
+  <span>Maître Renard par l’odeur alléché</span>
+  <span>Lui tint à peu près ce langage :</span>
+  <span>Et bonjour, Monsieur du Corbeau.</span>
+</p>
+
+<div id="board">
+  <div></div><div></div><div></div><div></div><div></div>
+  <div></div><div></div><div></div><div></div><div></div>
+  <div></div><div></div><div></div><div></div><div></div>
+  <div></div><div></div><div></div><div></div><div></div>
+</div>
+
+<ul>
+  <li>
+    <a href="http://monsite.com/page2.html">page2</a>
+  </li>
+  <li><a href="http://google.fr">google</a></li>
+  <li><a href="http://monsite.com/page3.html">page3</a></li>
+</ul>
+
+<div id="test"></div>
+
+</html>

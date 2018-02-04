@@ -1,0 +1,45 @@
+<style>
+html {
+	background: #506083;
+}
+
+.FDP{
+	background: white;
+	background-image: url('./3-Background1.png');
+	width: 190px;
+	height: 220px;
+	border: 2px solid black;
+	border-radius: 5px;
+	display: inline-block;
+	margin: 5px;
+}
+
+.norep{background-repeat:no-repeat;}
+.repx{background-repeat:repeat-x;}
+.repy{background-repeat:repeat-y;}
+
+.posbr{background-position:bottom right;}
+.postl{background-position:top left;}
+.postr{background-position:top right;}
+.posm{background-position:center center;}
+.posb{background-position:bottom center;}
+
+.siz1{background-size:100% 50%;}
+.siz2{background-size:200% 100%;}
+.siz3{background-size:49%;}
+
+.random{background-repeat: space;}
+</style>
+
+<html>
+	<div class="FDP norep posbr"></div>
+	<div class="FDP norep posm"></div>
+	<div class="FDP repy postr"></div>
+	<div class="FDP posbr"></div>
+	<div class="FDP posm"></div>
+	<div class="FDP norep posb siz1"></div>
+	<div class="FDP postl siz2"></div>
+	<div class="FDP posm siz2"></div>
+	<div class="FDP random siz3"></div>
+	<div class="FDP posb siz1"></div>
+</html>

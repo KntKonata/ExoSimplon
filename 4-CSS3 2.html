@@ -1,0 +1,88 @@
+<style>
+@charset "UTF-8";
+/*
+ rappel selecteur par attribut 
+  - [attr^="value"] attr commence par "value" 
+  - [attr$="value"] attr fini par "value" 
+  - [attr*="value"] attr contient "value"
+*/
+ul {
+  padding: 0;
+}
+ul li {
+  float: left;
+  list-style-type: none;
+}
+ul li a {
+  display: block;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #CCC;
+  text-decoration: none;
+  color: black;
+  background: #EEE;
+  border: 3px solid white;
+}
+a[title*="color"]{background-image: linear-gradient(45deg, red, yellow);}
+a[title$="merge"]{font-weight:bold;}
+a[title*="background"]{background:#555;color:#FFF;}
+a[title^="font"]{font-style:italic;}
+a[title^="text"]{font-style:italic;}
+a[title^="box"]{text-transform:uppercase;}
+a[title*="border"]{border:3px solid #161828;}
+a[title*="top"]{border-top:3px solid red;}
+a[title*="bottom"]{border-bottom:3px solid red;}
+a[title*="radius"]{border-radius:20px;}
+a[title*="shadow"]{box-shadow: 10px -5px 5px #506083;}
+a[title^="list"]::before {
+	content: '➣';
+	font-size: 10px;
+}
+
+</style>
+
+<html>
+
+<h1>propriétés standards</h1>
+<ul>
+  <li><a title="font merge" href="#">font</a></li>
+  <li><a title="font color" href="#">color </a></li>
+  <li><a title="font style" href="#">font-style </a></li>
+  <li><a title="font weight" href="#">font-weight</a></li>
+  <li><a title="font size" href="#">font-size</a></li>
+  <li><a title="text align" href="#">text-align</a></li>
+  <li><a title="text decoration" href="#">text-decoration</a></li>
+  <li><a title="text shadow" href="#">text-shadow</a></li>
+  <li><a title="list merge" href="#">list-style</a></li>
+  <li><a title="list position" href="#">list-style-position</a></li>
+  <li><a title="list type" href="#">list-style-type</a></li>
+  <li><a title="box background merge" href="#">background</a></li>
+  <li><a title="box background image" href="#">background-image</a></li>
+  <li><a title="box background position" href="#">background-position</a></li>
+  <li><a title="box background size" href="#">background-size</a></li>
+  <li><a title="box background repeat" href="#">background-repeat</a></li>
+  <li><a title="box background color" href="#">background-color</a></li>
+  <li><a title="box border merge" href="#">border</a></li>
+  <li><a title="box border width merge" href="#">border-width</a></li>
+  <li><a title="box border style merge" href="#">border-style</a></li>
+  <li><a title="box border color merge" href="#">border-color</a></li>
+  <li><a title="box border radius merge" href="#">border-radius</a></li>
+  <li><a title="box border bottom color" href="#">border-bottom-color</a></li>
+  <li><a title="box border top color" href="#">border-top-color</a></li>
+  <li><a title="box border top width" href="#">border-top-width</a></li>
+  <li><a title="box border top right radius" href="#">border-top-right-radius</a></li>
+  <li><a title="box shadow" href="#">box-shadow</a></li>
+  <li><a title="box sizing" href="#">box-sizing</a></li>
+  <li><a title="box margin merge" href="#">margin</a></li>
+  <li><a title="box margin top" href="#">margin-top</a></li>
+  <li><a title="box margin bottom" href="#">margin-bottom</a></li>
+  <li><a title="box padding merge" href="#">padding</a></li>
+  <li><a title="box padding top" href="#">padding-top</a></li>
+  <li><a title="box padding bottom" href="#">padding-bottom</a></li>
+  <li><a title="box width" href="#">width</a></li>
+  <li><a title="box height" href="#">height</a></li>
+  <li><a title="box display" href="#">display</a></li>
+  <li><a title="box float" href="#">float</a></li>
+  <li><a title="box float clear" href="#">clear</a></li>
+</ul>
+</html>
