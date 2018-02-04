@@ -1,0 +1,76 @@
+<style>
+	.box {
+		background-color: white;
+		border: 1px solid black;
+		padding: 5px;
+		margin: 5px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.flexRNWFS {
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+	}
+
+	.flexCWC {
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.flexRWC {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.flexRNWFE {
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-end;
+	}
+
+	.red { background-color:red; }
+	.orange { background-color:orange; }
+	.yellow { background-color:yellow; }
+	.green { background-color:green; }
+	.blue { background-color:blue; }
+	.size { width:50px;height:50px; }
+</style>
+
+<html>
+	<div class="box flexCWC red">
+		<div class="box flexRNWFS orange">
+			<div class="box yellow size"></div>
+			<div class="box yellow size"></div>
+		</div>
+		<div class="box flexRWC orange">
+			<div class="box flexCWC yellow">
+				<div class="box flexRNWFS green">
+					<div class="box blue size"></div>
+					<div class="box blue size"></div>
+				</div>
+				<div class="box flexRNWFS green">
+					<div class="box blue size"></div>
+					<div class="box blue size"></div>
+				</div>
+			</div>
+			<div class="box flexCWC yellow">
+				<div class="box flexRNWFS green">
+					<div class="box blue size"></div>
+					<div class="box blue size"></div>
+				</div>
+				<div class="box flexRNWFS green">
+					<div class="box blue size"></div>
+					<div class="box blue size"></div>
+				</div>
+			</div>
+		</div>
+		<div class="box flexRNWFE orange">
+			<div class="box yellow size"></div>
+			<div class="box yellow size"></div>
+		</div>
+	</div>
+</html>
